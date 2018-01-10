@@ -1,0 +1,68 @@
+
+<html>
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>The Sparks Foundation India Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Bootstrap Web Templates, Flat Web Templates" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />	
+<script src="js/jquery.min.js"> </script>
+<!--webfonts-->
+ <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700|Playball' rel='stylesheet' type='text/css'>
+<!--//webfonts-->
+</head>
+<body>
+	<!--start-home-->
+	<div id="home" class="header">
+		<div class="header-bottom">
+			<div class="container">
+				<div class="logo">
+					<a href="index.html"><h1>The Sparks Foundation <span>India</span></h1></a>
+				</div>
+				<span class="menu"></span>
+				<div class="top-menu">
+				<ul class="cl-effect-16">
+						<li><a id="HomeLink" class="active" href="#" data-hover="HOME">Home</a></li> 
+						<li><a id="aboutLink" href="#" data-hover="About">About Us</a></li>
+						<li><a href="#" data-hover="Projects">Projects</a></li>
+						<li><a href="#" data-hover="Donations">Donations</a></li>
+						<li><a href="#" data-hover="BLOG">BLOG</a></li>
+						<li><a id="contactLink" href="#" data-hover="CONTACT">Contact US</a></li>
+						<div class="clearfix"> </div>
+					</ul>
+				</div>
+   
+<div>
+   <!-- page 2 message colored in blue -->
+    <!-- in the beginning page2 is not visible (display set to 'none') -->
+    <p id="contact" style="font-size:40px;color:blue;display:none">This is contact page </p>
+
+    <!-- page 1 message colored in red -->
+    <p id="about" style="font-size:40px;color:red" >This is about page </p>
+</div>
+</body>
+ 
+<script>
+	$(document).ready(function () {
+    // when page1Link link is clicked, page1 shows,
+    // page2 hides
+    $(aboutLink).bind("click", function () {
+        $(about).show();
+        $(contact).hide();
+    });
+
+    // when page2Link link is clicked, page2 shows,
+    // page1 hides
+    $(contactLink).bind("click", function () {
+        $(about).hide();
+        $(contact).show();
+    });
+});
+</script>
+</body>
+</html>
